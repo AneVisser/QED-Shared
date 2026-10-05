@@ -15,6 +15,9 @@ kotlin {
 
 dependencies {
     implementation(kotlin("stdlib"))
+    // api (not implementation): consumers of QED-Shared also need qed.contract types,
+    // because the RequestType alias below points to them
+    api("com.qed:QED-Api-Contract:1.0.0")
 }
 
 
